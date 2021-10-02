@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TestMapper {
 
-	List<String> getUsers() throws Exception;
+	int getUsers() throws Exception;
 }

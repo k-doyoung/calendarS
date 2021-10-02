@@ -15,10 +15,7 @@ public class TestSerivceImpl implements TestService {
 	
 	
 	@Override
-	public List<String> getUsers() throws Exception{
-		
+	public int getUsers() throws Exception{
 		return testMapper.getUsers();
 	}
-	
-
 }

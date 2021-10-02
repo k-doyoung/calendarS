@@ -31,7 +31,7 @@ public class TestController {
 	}
 	
 	@GetMapping("/getTest")
-	public List<String> getUsers() throws Exception {
+	public int getUsers() throws Exception {
 		return testService.getUsers();
 	}
 }

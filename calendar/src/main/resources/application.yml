@@ -1,0 +1,19 @@
+mybatis:
+  mapper-locations: mybatis/mapper/**/*.xml
+  type-aliases-package: com.atoz_develop.mybatissample.model
+server:
+  port: 9090
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://221.143.16.73:3306/devdb?serverTimezone=UTC&characterEncoding=UTF-8
+    username: cld
+    password: 1q2w3e4r
+  output:
+    ansi:
+      enabled: NEVER
