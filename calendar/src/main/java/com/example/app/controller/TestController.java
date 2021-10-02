@@ -24,7 +24,7 @@ public class TestController {
 	public @ResponseBody UserDto getUser() {
 		//UserDto userInfo = new UserDto("도영", 29);
 		UserDto userInfo = new UserDto();
-		userInfo.setAge(30);
+		userInfo.setAge("30");
 		userInfo.setName("ssㄴ");
 		
 		return userInfo;
@@ -33,5 +33,10 @@ public class TestController {
 	@GetMapping("/getTest")
 	public int getUsers() throws Exception {
 		return testService.getUsers();
+	}
+	
+	@GetMapping("/getUserDto")
+	public List<UserDto> getUserList() {
+		return testService.getUserList();
 	}
 }

@@ -8,4 +8,8 @@
   <select id="getUsers" resultType="int">
     SELECT 123 FROM dual;
   </select>
+  
+  <select id="getUserList" resultType="com.example.app.dto.UserDto">
+  	SELECT id, name, age FROM USER;
+  </select>
 </mapper>

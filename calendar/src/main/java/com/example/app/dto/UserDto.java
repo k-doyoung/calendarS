@@ -6,9 +6,10 @@ import lombok.ToString;
 @Data
 @ToString
 public class UserDto {
-
+	
+	private String id;
 	private String name;
-	private int age;
+	private String age;
 	
 //	public UserDto(String name,int age) {
 //		this.setName(name);
